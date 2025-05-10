@@ -1,0 +1,44 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: space-between; /* Adjust spacing between rows */
+}
+
+.card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with spacing */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+}
+.ellipse {
+  position: absolute;
+  top: 10px; /* Adjust the position as needed */
+  right: 10px; /* Adjust the position as needed */
+  width: 20px; /* Width of the ellipse */
+  height: 20px; /* Height of the ellipse */
+  background-color: #000; /* Background color of the ellipse */
+  border-radius: 50%; /* Makes it a circle */
+}
+
+.details {
+  display: flex;
+  background: #f9f9f9;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure it spans the full width of the card */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Ensure borders are included in the width */
+  /* gap: 10px; */
+}
+.project,
+.prototype {
+  flex: 1; /* Optional: Make both sections take equal space */
+  text-align: center; /* Center-align text inside each section */
+}
