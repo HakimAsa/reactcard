@@ -18,7 +18,7 @@ export default function Card() {
 
   return (
     <>
-      <div className="banner"></div>
+      <div className="banner" />
       <div className="card-container">
         {users.map((user) => (
           <div

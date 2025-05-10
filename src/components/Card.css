@@ -1,6 +1,6 @@
 .card-container {
   position: absolute; /* Position the cards on top of the banner */
-  top: 50px; /* Adjust the vertical position of the cards */
+  top: 200px; /* Adjust the vertical position of the cards */
   left: 50%; /* Center the cards horizontally */
   transform: translateX(-50%); /* Center the cards using transform */
   display: flex;
@@ -9,6 +9,18 @@
   gap: 20px; /* Space between cards */
   justify-content: center; /* Adjust spacing between rows */
   z-index: 2; /* Ensure cards are above the banner */
+}
+
+.banner {
+  width: 100vw;
+  height: 250px;
+  background: linear-gradient(
+    to right,
+    rgb(86, 86, 176),
+    purple
+  ); /* Linear gradient from blue to purple */
+  z-index: 1; /* Ensure the banner is below the cards */
+  position: relative;
 }
 
 .card {
@@ -37,14 +49,6 @@
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
-}
-
-.banner {
-  width: 100%;
-  height: 200px;
-  background-color: purple;
-  z-index: 1; /* Ensure the banner is below the cards */
-  position: relative;
 }
 
 .details {
