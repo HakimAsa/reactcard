@@ -21,8 +21,15 @@
   right: 10px; /* Adjust the position as needed */
   width: 20px; /* Width of the ellipse */
   height: 20px; /* Height of the ellipse */
-  background-color: #000; /* Background color of the ellipse */
+  background-color: #ccc; /* Background color of the ellipse */
   border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .details {

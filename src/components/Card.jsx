@@ -20,12 +20,15 @@ export default function Card() {
     <div>
       <div style={{ height: '100px', color: 'purple' }}></div>
       <div className="card-container">
-        <div className="ellipse"></div> {/* Add this div for the ellipse */}
         {users.map((user) => (
           <div
             key={user.id}
             className="card"
           >
+            <div className="ellipse">
+              <span style={{ alignSelf: 'center' }}>...</span>
+            </div>
+            {/* Add this div for the ellipse */}
             <img
               src={avatar}
               alt={user.name}
