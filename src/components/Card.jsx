@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css'
+import './Card.css'
 //https://jsonplaceholder.typicode.com/users
 import avatar from '../assets/avatar.png'
 
@@ -17,17 +17,15 @@ export default function Card() {
   }, [])
 
   return (
-    <div>
-      <div style={{ height: '100px', color: 'purple' }}></div>
+    <>
+      <div className="banner"></div>
       <div className="card-container">
         {users.map((user) => (
           <div
             key={user.id}
             className="card"
           >
-            <div className="ellipse">
-              <span style={{ alignSelf: 'center' }}>...</span>
-            </div>
+            <div className="ellipse">...</div>
             {/* Add this div for the ellipse */}
             <img
               src={avatar}
@@ -49,6 +47,6 @@ export default function Card() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   )
 }
